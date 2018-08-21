@@ -1,0 +1,15 @@
+body {
+    background-color:#FFC312;
+}
+p {
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    font-size: 70px;
+    color:#192a56;
+    position: absolute;
+    left: 350px;
+}
+img{
+  top:0px;
+  position:relative;
+  left:150px;
+}

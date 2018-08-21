@@ -1,0 +1,196 @@
+:root {
+  --main: #006064;
+  --alt: #00ACC1;
+  --orange: #FFB300;
+}
+
+html, body {
+	margin: 0;
+	width: 100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	background-color:#fa983a;
+	color: #2f3542;
+}
+
+main {
+	max-width: 550px;
+	margin: 80px auto;
+	background-color: white;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 15px;
+	padding: 20px;
+	-webkit-box-shadow: 0px 2px 5px 0px rgba(37,37,37,0.25);
+	-moz-box-shadow: 0px 2px 5px 0px rgba(37,37,37,0.25);
+	box-shadow: 0px 2px 5px 0px rgba(37,37,37,0.25);
+}
+
+#title,
+#description {
+	margin: 0;
+	text-align: center;
+}
+
+#title {
+	font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 2.3em;
+    color: var(--main);
+}
+
+#description {
+	font-style: italic;
+    font-weight: lighter;
+    font-size: 1.1em;
+    color: #2f3542;
+    margin-bottom: 20px;
+}
+
+form label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+form input,
+form textarea,
+form button,
+form select {
+	outline: none;
+	padding: 3px 7px;
+	font-size: 0.9em;
+	font-family: 'Lato', sans-serif;
+}
+
+form fieldset label {
+	font-size: 0.9em;
+	font-family: 'Lato', sans-serif;
+	cursor: pointer;
+}
+
+form input,
+form textarea,
+form select {
+	border: 1px solid #2f3542;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form select {
+	height: 35px;
+}
+
+form textarea {
+	display: block;
+	width: 100%;
+	margin: 5px 0;
+}
+
+#name,
+#email,
+#number,
+#dropdown {
+	width: calc(100% - 35px);
+}
+
+label[for="number-label"],
+label[for="dropdown"] {
+	width: calc(50% - 2.5px)
+}
+
+label[for="number-label"] {
+	float: left;
+}
+
+label[for="dropdown"]  {
+	float: right;
+}
+
+form table {
+	width: 100%;
+}
+
+form table td {
+	width: 50%;
+	border-collapse: collapse;
+}
+
+form i {
+	width: 35px !important;
+    height: 35px;
+    line-height: 35px !important;
+    color: white;
+    background-color: #F79F1F;
+    float: left;
+}
+
+form i,
+form label :nth-child(2) {
+    -webkit-transition: all 0.35s ease;
+    -moz-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+form label:hover i {
+	background-color: var(--orange);
+}
+
+form label:hover :nth-child(2) {
+	border: 1px solid var(--orange);
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	-webkit-transition: opacity 0.25s ease;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    -moz-transition: opacity 0.25s ease;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+	-webkit-transition: opacity 0.25s ease;
+    -o-transition: opacity 0.25s ease;
+    transition: opacity 0.25s ease;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {opacity: 0;}
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {opacity: 0;}
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {opacity: 0;}
+
+form fieldset {
+	border: 1px solid #2f3542;
+	margin: 0;
+}
+
+#submit {
+	float: right;
+	padding: 7px 20px;
+	font-size: 1em;
+	color: white;
+	border: none;
+	background-color: var(--orange);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#submit:hover {
+	background-color: var(--main);
+}

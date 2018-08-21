@@ -1,0 +1,218 @@
+body{
+  margin: 0;
+  background-color: #282C34;
+}
+#login{
+  display: none
+}
+.form
+{
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-color: #3C4049;
+  border-width: 2px;
+  background-color: #2C323C;
+  box-sizing: border-box;
+  padding:4%;
+  border-radius: 1%;
+  box-shadow: 0 3px 10px 4px #242527;
+  font-family: 'Nunito', sans-serif;
+  -webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.sign{
+    width: 50%;
+    color: white;
+    background-color: #568AF2;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    text-align: center;
+}
+.log{
+  width: 50%;
+  color: white;
+  background-color: gray;
+  float: right;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+  text-align: center;
+}
+.log:hover, .sign:hover{
+  background-color: #568afce0!important;
+}
+h1
+{
+  color: white;
+  text-transform: capitalize;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+span.ast{
+  color: #568AFC;
+  margin: 1px;
+}
+.sgnbtn
+{
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  background-color: #568AFC;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: white;
+  border: none;
+  margin-top: 10px;
+}
+.frow
+{
+  display: flex;
+  width: 100%;
+}
+.first{
+  float: left;
+  width: 100%;
+  margin-right: 5px
+}
+.first input{
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c3d4f7;
+  box-sizing: border-box;
+}
+.last{
+    float: right;
+    width: 100%;
+    margin-left: 5px
+}
+.last input{
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c3d4f7;
+  box-sizing: border-box;
+}
+@media only screen and (orientation:portrait){
+  .frow
+    {
+      display: inline-block;
+      width: 100%;
+    }
+  .first{
+    float:left;
+    width: 100%;
+    margin-right: 0px
+  }
+  .last{
+    float: right;
+    width: 100%;
+    margin-left: 0px
+  }
+}
+.email input, .pass input{
+  float:left;
+  width:100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c3d4f7;
+  box-sizing: border-box;
+}
+input
+{
+  height: 40px;
+  margin: 10px 0px;
+  padding: 5px;
+  font-size: 20px;
+  background-color: transparent;
+  color: white;
+}
+label {
+  position: absolute;
+  font-size: 20px;
+  transform: translate(8px,16px);
+  transition: all 0.25s ease;
+  pointer-events: none;
+  color: #92999E
+}
+.label-active
+{
+      font-size: 14px;
+      transform: translate(1px,49px);
+    }
+
+.ast:active{
+        display: none;
+      }
+.email, .pass
+{
+  display: flex
+}
+#login a{
+  float: right;
+  color: #568AFC;
+  text-decoration: none;
+}
+#login a:hover{
+  text-decoration: underline;
+}
+/*
+Sign Up Button  */
+
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    padding-left:500px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="SignIn.css">
+  <script src="SignIn.js"></script>
+
+</div>
+<div class="form">
+  <form>
+<a href="#" onclick="signup(); return false;"><span class="sign" id="sign">Sign Up</span></a>
+<a href="#" onclick="login(); return false;"><span class="log" id="log">Log In</span><br></a>
+  <div id="signup">
+    <h1>Create an account!</h1><br>
+<div class="frow">
+  <span class="first" onkeypress="transform1(); return true;"><label id="label1" for="fname">First Name<span class="ast">*</span></label><input id = "first" type="text" required></span>
+  <span class="last" onkeypress="transform2(); return true;"><label id="label2" for="lname">Last Name<span class="ast">*</span></label><input type ="text" required></span><br>
+</div>
+<span class="email" onkeypress="transform3(); return true;"><label id="label3" for="email">Email<span class="ast">*</span></label><input type = "email" required></span>
+<span class="pass" onkeypress="transform4(); return true;"><label id="label4" for="password">Password<span class="ast">*</span></label><input type="password" required><br></span>
+
+
+<button type="submit" class="sgnbtn" onclick="signUp()">Sign Me Up</button>
+<div class="popup" onclick="signUp()">
+  <span class="popuptext" id="myPopup">You are signed up!</span>
+</div>
+
+</div>
+<div id="login">
+<h1>Welcome Back!</h1><br>
+<span class="email" onkeypress="transform5(); return true;"><label id="label5" for="email">Email<span class="ast">*</span></label><input type = "email" required></span>
+<span class="pass" onkeypress="transform6(); return true;"><label id="label6" for="password">Password<span class="ast">*</span></label><input type="password" required><br></span>
+<a href="#"> Forgot your password?</a>
+<div class="button"><button type="submit" class="sgnbtn" onClick= "window.location.href='file:///C:/Users/gwc7/Desktop/JEN-master/Survey/survey.html?'" >Log In</button></div>
+</div>
+</form>
+</div>
+</body>
+</html>
